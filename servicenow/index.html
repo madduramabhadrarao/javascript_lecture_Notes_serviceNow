@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceNow JavaScript Fundamentals - CSA & CAD Exam Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+<style>
+  .code-editor {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    min-height: 260px;
+    background-color: #0f172a !important;
+    color: #e2e8f0 !important;
+    caret-color: #e2e8f0;
+    line-height: 1.5;
+  }
+  .code-editor:focus {
+    border-color: #334155;
+    box-shadow: 0 0 0 0.2rem rgba(51,65,85,0.25);
+  }
+  .code-console {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    border-radius: 6px;
+    padding: 12px;
+    min-height: 260px;
+    overflow: auto;
+  }
+  .code-console .log { color: #a7f3d0; }
+  .code-console .warn { color: #fde68a; }
+  .code-console .error { color: #fecaca; }
+  .code-console .result { color: #93c5fd; }
+</style>
+</head>
+<body>
+    <div class="page">
+        <!-- Navbar -->
+        <header class="navbar navbar-expand-md navbar-light d-print-none">
+            <div class="container-xl">
+                <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+                    <a href="index.html">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/ServiceNow_logo.svg" 
+                             height="32" alt="ServiceNow">
+                        <span class="ms-2">JavaScript Exam Guide</span>
+                    </a>
+                </h1>
+            </div>
+        </header>
+
+        <div class="page-wrapper">
+            <!-- Page header -->
+            <div class="page-header d-print-none">
+                <div class="container-xl">
+                    <div class="row g-2 align-items-center">
+                        <div class="col">
+                            <h2 class="page-title">
+                                ServiceNow JavaScript Fundamentals
+                            </h2>
+                            <div class="text-muted mt-1">Complete Learning Roadmap for CSA & CAD Certifications</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page body -->
+            <div class="page-body">
+                <div class="container-xl">
+                    <!-- Learning Path -->
+                    <div class="row row-cards mb-4">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        <i class="ti ti-route me-2"></i>Learning Roadmap
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="steps steps-vertical">
+                                        <div class="step-item">
+                                            <div class="h4 m-0">Client-Side JavaScript Fundamentals</div>
+                                            <div class="text-muted">Master browser-side scripting for forms and UI</div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="h4 m-0">Server-Side JavaScript & GlideSystem</div>
+                                            <div class="text-muted">Learn business rules, script includes, and server APIs</div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="h4 m-0">Practice Exam Questions</div>
+                                            <div class="text-muted">Test your knowledge with real exam scenarios</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client-Side Topics -->
+                    <div class="row row-cards mb-4">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header bg-primary-lt">
+                                    <h3 class="card-title">
+                                        <i class="ti ti-browser me-2"></i>Client-Side JavaScript
+                                    </h3>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <a href="unit1.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">0</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>JavaScript Introduction (part-1)</strong>
+                                                </div>
+                                                <div class="text-muted">History, engines, DOM fundamentals, and ServiceNow context</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">Foundation</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                     <a href="unit2.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">0</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>JavaScript Introduction (part-2)</strong>
+                                                </div>
+                                                <div class="text-muted">History, engines, DOM fundamentals, and ServiceNow context</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">Foundation</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="client-side-basics.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-primary">1</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>JavaScript Basics & Syntax</strong>
+                                                </div>
+                                                <div class="text-muted">Variables, data types, operators, functions, and control structures</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-blue">12 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- <a href="refrence/javascript-question-bank.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-purple">Ref</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>JavaScript Question Bank</strong>
+                                                </div>
+                                                <div class="text-muted">Curated CSA/CAD-focused questions with concise answers</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-purple">Practice</span>
+                                            </div>
+                                        </div>
+                                    </a> -->
+                                    <a href="client-scripts.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-primary">2</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>Client Scripts</strong>
+                                                </div>
+                                                <div class="text-muted">onLoad, onChange, onSubmit, onCellEdit - Form interactivity</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-blue">15 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="ui-policies-actions.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-primary">3</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>UI Policies & UI Actions</strong>
+                                                </div>
+                                                <div class="text-muted">Dynamic form behavior and custom buttons</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-blue">10 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="glideform-glideuser.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-primary">4</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>g_form & g_user APIs</strong>
+                                                </div>
+                                                <div class="text-muted">Client-side form manipulation and user information</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-blue">18 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="glideajax.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-primary">5</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>GlideAjax</strong>
+                                                </div>
+                                                <div class="text-muted">Client-to-server asynchronous communication</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-blue">14 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Practice Playground -->
+                    <div class="row row-cards mb-4">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header  text-white">
+                                    <h3 class="card-title">
+                                        <i class="ti ti-terminal-2 me-2"></i>JavaScript Practice Playground
+                                    </h3>
+                                    <div class="card-actions">
+                                        <button id="run-code-btn" class="btn btn-success btn-sm me-2">
+                                            <i class="ti ti-player-play"></i> Run
+                                        </button>
+                                        <button id="reset-code-btn" class="btn btn-outline-warning btn-sm me-2">
+                                            <i class="ti ti-rotate"></i> Reset
+                                        </button>
+                                        <button id="clear-code-btn" class="btn btn-outline-danger btn-sm me-2">
+                                            <i class="ti ti-trash"></i> Clear
+                                        </button>
+                                        <button id="copy-code-btn" class="btn btn-outline-secondary btn-sm">
+                                            <i class="ti ti-copy"></i> Copy
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-lg-7">
+                                            <label class="form-label">Code Editor</label>
+                                            <textarea id="js-editor" class="form-control code-editor" rows="12"></textarea>
+                                            <div class="text-muted small mt-2">
+                                                Tip: Use <code>console.log()</code> to print output.
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <label class="form-label">Console Output</label>
+                                            <div id="js-output" class="code-console"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Server-Side Topics -->
+                    <div class="row row-cards mb-4">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header bg-success-lt">
+                                    <h3 class="card-title">
+                                        <i class="ti ti-server me-2"></i>Server-Side JavaScript & GlideSystem Objects
+                                    </h3>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <a href="business-rules.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">6</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>Business Rules</strong>
+                                                </div>
+                                                <div class="text-muted">Server-side automation: before, after, async, display</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">16 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="gliderecord.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">7</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>GlideRecord</strong>
+                                                </div>
+                                                <div class="text-muted">Database operations: query, insert, update, delete</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">20 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="glidesystem.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">8</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>GlideSystem (gs)</strong>
+                                                </div>
+                                                <div class="text-muted">System utilities: logging, user info, properties, messages</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">15 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="glidedatetime.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">9</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>GlideDateTime & GlideDuration</strong>
+                                                </div>
+                                                <div class="text-muted">Date/time manipulation and calculations</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">12 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="script-includes.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">10</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>Script Includes</strong>
+                                                </div>
+                                                <div class="text-muted">Reusable server-side code libraries</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">13 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="glideaggregate.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">11</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>GlideAggregate</strong>
+                                                </div>
+                                                <div class="text-muted">Database aggregation: COUNT, SUM, AVG, MIN, MAX</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">10 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="scheduled-jobs.html" class="list-group-item list-group-item-action">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <span class="badge bg-success">12</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-truncate">
+                                                    <strong>Scheduled Jobs & Events</strong>
+                                                </div>
+                                                <div class="text-muted">Automation workflows and event-driven scripting</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <span class="badge bg-green">11 Questions</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="row row-cards">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card card-sm">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <span class="bg-primary text-white avatar">
+                                                <i class="ti ti-file-text"></i>
+                                            </span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="font-weight-medium">12 Topics</div>
+                                            <div class="text-muted">Complete Coverage</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card card-sm">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <span class="bg-success text-white avatar">
+                                                <i class="ti ti-help"></i>
+                                            </span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="font-weight-medium">166 Questions</div>
+                                            <div class="text-muted">Exam Practice</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card card-sm">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <span class="bg-info text-white avatar">
+                                                <i class="ti ti-certificate"></i>
+                                            </span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="font-weight-medium">CSA & CAD</div>
+                                            <div class="text-muted">Both Exams</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card card-sm">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <span class="bg-warning text-white avatar">
+                                                <i class="ti ti-code"></i>
+                                            </span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="font-weight-medium">Live Examples</div>
+                                            <div class="text-muted">Interactive Code</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer footer-transparent d-print-none">
+                <div class="container-xl">
+                    <div class="row text-center align-items-center">
+                        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                            <ul class="list-inline list-inline-dots mb-0">
+                                <li class="list-inline-item">
+                                    ServiceNow JavaScript Exam Guide - CSA & CAD Preparation
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <script>
+      (function() {
+        const editor = document.getElementById('js-editor');
+        const output = document.getElementById('js-output');
+        const runBtn = document.getElementById('run-code-btn');
+        const resetBtn = document.getElementById('reset-code-btn');
+        const copyBtn = document.getElementById('copy-code-btn');
+        const clearBtn = document.getElementById('clear-code-btn');
+
+        const defaultCode = `// Try editing and clicking Run!\n// Prints to the console-output panel:\nconsole.log("Hello, ServiceNow JavaScript!");\n// Do some math:\nfunction add(a, b) { return a + b; }\nconsole.log("2 + 3 =", add(2, 3));\n// Return a value from your script:\n"Returned value from your script";`;
+
+        function append(type, valueArr) {
+          const line = document.createElement('div');
+          line.className = type;
+          const text = valueArr.map(v => {
+            try {
+              if (typeof v === 'object') {
+                return JSON.stringify(v, null, 2);
+              }
+              return String(v);
+            } catch (_) {
+              return String(v);
+            }
+          }).join(' ');
+          line.textContent = text;
+          output.appendChild(line);
+          output.scrollTop = output.scrollHeight;
+        }
+
+        function runCode() {
+          output.innerHTML = '';
+          const original = {
+            log: console.log,
+            warn: console.warn,
+            error: console.error
+          };
+          console.log = (...args) => append('log', args);
+          console.warn = (...args) => append('warn', args);
+          console.error = (...args) => append('error', args);
+
+          try {
+            const result = new Function(editor.value)();
+            if (typeof result !== 'undefined') {
+              append('result', [result]);
+            }
+          } catch (err) {
+            append('error', [err && err.stack ? err.stack : err]);
+          } finally {
+            console.log = original.log;
+            console.warn = original.warn;
+            console.error = original.error;
+          }
+        }
+
+        function resetCode() {
+          editor.value = defaultCode;
+          output.innerHTML = '';
+        }
+
+        function clearCode() {
+          editor.value = '';
+          output.innerHTML = '';
+          editor.focus();
+        }
+
+        function copyCode() {
+          navigator.clipboard.writeText(editor.value)
+            .then(() => {
+              append('log', ['Code copied to clipboard']);
+            })
+            .catch(() => {
+              append('warn', ['Unable to copy to clipboard']);
+            });
+        }
+
+        runBtn.addEventListener('click', runCode);
+        resetBtn.addEventListener('click', resetCode);
+        clearBtn.addEventListener('click', clearCode);
+        copyBtn.addEventListener('click', copyCode);
+
+        editor.addEventListener('keydown', (e) => {
+          if (e.ctrlKey && e.key === 'Enter') {
+            e.preventDefault();
+            runCode();
+          }
+        });
+
+        resetCode();
+      })();
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>
